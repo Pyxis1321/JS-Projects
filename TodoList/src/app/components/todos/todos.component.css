@@ -1,5 +1,7 @@
 .todo {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 10px 15px;
 	background-color: #FFF;
 	border-bottom: 1px solid #DDD;
@@ -23,6 +25,11 @@
 
 .todo.done .content {
 	text-decoration: line-through;
+	padding: 6px 0px;
+	background-color: rgba(254, 72, 127, 0.11);
+	border-radius: 12px;
+	margin-right: 10px;
+	
 }
 
 .todo-input {
@@ -43,14 +50,27 @@
 	max-width: 200px;
 	appearance: none;
 	border: none;
+	border-radius: 12px;
 	outline: none;
 	background: none;
 
-	background-color: #FE4880;
+	background-color: rgb(254, 72, 128);
 	color: #FFF;
 	margin: 15px auto;
 
 	padding: 10px 15px;
 	font-size: 18px;
 	font-weight: 700;
+}
+
+.delete {
+	background-color: #222422; /* Green */
+  	border: none;
+	border-radius: 12px;
+  	color: white;
+  	padding: 8px 15px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 10px;
 }
